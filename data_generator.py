@@ -134,7 +134,7 @@ def _generate_one(make_points):
 
 def generate(n, progress=None):
     """n circles and n squares, alternating. progress(i, n) is called after every pair.
-    Returns a list of rows (4 features, label, source)."""
+    Returns a list of rows (2 features, label, source)."""
     rows = []
     for i in range(n):
         for label, make_points in (("circle", circle_points), ("square", square_points)):
